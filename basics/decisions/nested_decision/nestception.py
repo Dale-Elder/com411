@@ -23,3 +23,5 @@ if where == lab:
         print("Yes! I found my battery!")
     else:
         print("Found some tools but no battery.")
+else:
+    print("I do not know where that is but I will keep looking.")
