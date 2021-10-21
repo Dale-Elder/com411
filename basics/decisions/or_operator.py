@@ -1,5 +1,5 @@
 # code to demonstrate the use of a logical or operator. #
-
+#taking user im
 print("What type of adventure should i have? ")
 choice = input()
 
