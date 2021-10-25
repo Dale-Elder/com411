@@ -13,4 +13,4 @@ for count in range(mountain):
     print(" / ^  ^  ^^  ^   \_")
     print("\n")
 
-
+print("Done!")
