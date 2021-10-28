@@ -12,7 +12,3 @@ for letters in phrase:
     backwards = letters + backwards
 
 print(backwards)
-
-
-
-
