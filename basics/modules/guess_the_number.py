@@ -1,4 +1,5 @@
 # code to demonstrate the import and use of a module. #
+
 def run():
     import random as rnd
 
