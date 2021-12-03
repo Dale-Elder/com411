@@ -23,7 +23,7 @@ Please select one of the following options:
 [2] Display the number of passengers that survived
 [3] Display the number of passengers per gender
 [4] Display the number of passengers per age group
-[5] Display the number of survivors per age group"      
+[5] Display the number of survivors per age group      
         """)
 
     return int(input())
