@@ -26,6 +26,8 @@ def menu():
     [team]{team:>33}
     [exit]{exit_program:>20}""")
     print("\nYour selection: ")
+    selection = str(input())
+    return selection
 
 
 def display_medal_tally(tally):
