@@ -1,5 +1,6 @@
 # Code for a Text User Interface, that can manipulate "The Olympics Data Set". #
 
+
 def started(msg=""):
     print("-" * 85)
     print(f"Operation started: {msg}...\n")
@@ -26,15 +27,14 @@ def menu():
     [team]{team:>33}
     [exit]{exit_program:>20}""")
     print("\nYour selection: ")
-    selection = str(input())
+    selection = input()
     return selection
 
 
 def display_medal_tally(tally):
-    for tally in tally.items():
-        print(f"|{'Gold':<15}|{tally['Gold']:<15}")
-        print(f"|{'Silver':<15}|{tally['Silver']:<15}")
-        print(f"|{'Bronze':<15}|{tally['Bronze']:<15}")
+    print(f"| {'Gold':<10} | {tally['Gold']:<10} |")
+    print(f"| {'Silver':<10} | {tally['Silver']:<10} |")
+    print(f"| {'Bronze':<10} | {tally['Bronze']:<10} |")
 
 
 def display_team_medal_tally(team_tally):
@@ -44,5 +44,6 @@ def display_team_medal_tally(team_tally):
 
 
 def display_years(years):
-    for year in years.sorted:
+    sorted_years = sorted(years, reverse=True)
+    for year in sorted_years:
         print(year)

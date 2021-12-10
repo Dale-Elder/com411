@@ -6,10 +6,10 @@ import tui
 
 def read_data(file_path):
     tui.started(f"Reading data from {file_path}")
+    data = []
     with open(file_path) as file:
         csv_reader = csv.reader(file)
-        headings = next(csv_reader)
-        data = []
+        next(csv_reader)
         for value in csv_reader:
             data.append(value)
     tui.completed()
@@ -22,11 +22,11 @@ def run():
     while True:
         selection = tui.menu()
         if selection == "years":
-            tui.display_years()
+            process.list_years(athlete_data)
         elif selection == "tally":
-            tui.display_medal_tally()
+            process.tally_medals(athlete_data)
         elif selection == "team":
-            tui.display_team_medal_tally()
+            process.tally_team_medals(athlete_data)
         elif selection == "exit":
             break
         else:
